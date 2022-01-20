@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form in html</title>
+  </head>
+  <body>
+    <h1>Login form</h1>
+    <!-- thẻ form -->
+    <!-- action: để server xử lý chuyển trang login -->
+    <!-- method: get và post: get lấy dl, post truyền dữ liệu - http -->
+    <form action="./login" method="post">
+      <!-- the label tác dụng là hiển thị thông tin -->
+      <!-- name: server hiểu tag sử dụng đc tài nguyên của tag -->
+      <label for="txt-username">user name</label>
+      <input
+        type="text"
+        name="username"
+        id="txt-username"
+        placeholder="tên đăng nhập"
+      /><br />
+      <label for="txt-password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="txt-password"
+        placeholder="mật khẩu"
+      />
+      <hr />
+      <input type="button" value="login" />
+      <input type="submit" value="login" />
+      <input type="submit" value="logout" />
+      <a href="">forgot password</a>
+    </form>
+
+    <!-- dạng của thẻ input -->
+    <p>input dang text</p>
+    <form action="./action_page" method="post">
+      <label for="txt-info1">thông tin</label>
+      <!-- required: trường dữ liệu bắt buộc -->
+      <!-- readonly: trường dữ liệu chỉ đọc -->
+      <input
+        required
+        readonly
+        type="text"
+        name="txt-info1"
+        id="txt-info1"
+        value="thong tin"
+      />
+      <input type="submit" value="thong tin" />
+    </form>
+    <p>input dang password</p>
+    <form action="./action_page" method="post">
+      <label for="txt-password1">password</label>
+      <input type="password" name="txt-password1" id="txt-password1"  />
+      <input type="submit" value="thong tin" />
+    </form>
+    <p>input dang email</p>
+    <form action="./action_page" method="post">
+      <label for="txt-email">password</label>
+      <input type="email" name="txt-email" id="txt-email"  />
+      <input type="submit" value="thong tin" />
+    </form>
+
+    <p>input dang number</p>
+    <form action="./action_page" method="post">
+      <label for="txt-quantity">số lượng sản phẩm</label>
+      <input type="number" name="txt-quantity" id="txt-quantity" min=0 max=100 step="5" />
+      <input type="submit" value="thong tin" />
+    </form>
+
+    <p>input dang checkbox</p>
+    <form action="./action_page" method="post">
+      <label for="cb-status">trạng thái</label>
+      <input type="checkbox" name="cb-status" id="cb-status" checked/>
+      <input type="submit" value="thong tin" />
+    </form>
+
+    <p>input dang radio</p>
+    <form action="./action_page" method="post">
+      <label>Giới tính</label>
+      <input 
+      type="radio"
+      name="gender" 
+      id="rd-male" 
+      value="nam"/>
+      <label for="rd-male">nam</label>
+      <input type="radio" name="gender" id="rd-female" value="nu"/>
+      <label for="rd-female">nữ</label>
+      <input type="radio" name="gender" id="rd-other" value="other"checked/>
+      <label for="rd-other">khác</label>
+      <input type="submit" value="thong tin" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học css</title>
+    <!-- 3. triển khai thông qua file css bên ngoài-->
+    <link rel="stylesheet" href="./css/customlessson6.css">
+    <!-- 2.kiểu external-->
+    <style>
+        /*tag name*/
+        p{
+            color:  blue;
+            font-size: 25px;
+        }
+        /* id */
+        #p2{
+            color: black;
+            font-size: 40px;
+        }
+        /* classs */
+        .class-p{
+            color: cornflowerblue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.các cách triển khai css trong html-->
+    <!-- 2. độ ưu tiên của các phương thức triển khai css trong html-->
+    <!-- 3. cách viết css dựa trên tagname,id , class-->
+    <p style="color: brown;font-size: 20px;">Triển khai css trong html</p>
+    <!-- triển khai tnternal-->
+    <!-- độ ưu tiên cao nhất:internal-->
+    <!-- với thẻ style và file dựa trên thứ tự trong thẻ head 
+        để quyết định việc stylen nào được sử dụng và
+        cái nào nằm dưới thì sẽ được nhận 
+    link mà nằm trên style thì nhận style-->
+    <!-- các loại viết css: tag name ,id,class-->
+    <!-- đánh giá trị cho độ ưu tiên-->
+   <!--- internal:1000,-> dài quá code sẽ rối
+    id:100  -> nếu như chỉ triển khai qua 1 thẻ
+    class:10 -> triển khai cho nhiều tag
+    style ,tagname of file : 1 -> ít khi sử dụng 
+    (chỉ triên khai cho toàn bộ 1 tag cùng tên)
+    normal : 0 -->
+    <p>Triển khai css trong html 2</p>
+    <p class="class-p">Triển khai css trong html 3</p>
+   <p> Triển khai css trong html 4</p>
+   Triển khai css trong html 5
+
+</body>
+</html>

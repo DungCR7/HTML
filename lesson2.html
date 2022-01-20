@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in đậm thẻ b và strong-->
+    <p>
+        họ và tên : <b> Bùi Văn Dũng </b>
+    </p>
+    <p>
+        họ và tên : <strong> Bùi Văn Dũng </strong> 
+    </p>
+    <!-- in nghiêng với thẻ i và em -->
+    <p>
+        truyện kiều <i> nguyễn du </i>
+    </p>
+    <p>
+        truyện kiều <em> nguyễn du </em>
+    </p>
+    <h1 id="text-info"> Thong tin can chuyen den </h1>
+    <!-- gạch ngang thẻ s và strike -->
+    <p>
+        giá : <br>
+        giá gốc <s> 1234 </s> <br>
+        giá km : 1233
+    </p>
+    <p> 
+        giá : <br>
+        giá gốc <strike> 1234 </strike> <br>
+        giá km : 1233
+    </p>
+    <!-- thẻ gạch chân -->
+    <p>
+        lớp tôi : <u> xuất sắc </u>
+    </p>
+    <!-- chỉ số trên và chỉ số dưới-->
+    <p>
+        kết quả : a <sub> 2 </sub> 
+    </p>
+    <p>
+        kết quả : a <sup> 2 </sup>
+    </p>
+    <!-- tittle chú thích cho các tag html-->
+    <p>
+      <b title="Tổ chức y tế thế giới"> WHO </b> công bố dịch COVID 
+    </p>
+    <!-- attribute hiệu chỉnh thuộc tính nội dung -->
+    <p>
+        họ tên : <b style="color: rgb(135, 54, 211); 
+        background-color: rgb(255, 255, 255) ;"> Bùi Văn Dũng </b>  
+    </p>
+    <!-- thẻ a dùng để link sang page ,url -->
+    <a href=" https://www.facebook.com/vandung.bui.374549/ ">Facebook cá nhân </a> <br>
+    <!-- target sang 1 tab khac-->
+    <a href=" https://www.facebook.com/vandung.bui.374549/ "target="blank">Facebook cá nhnhân </a> <br>
+    
+    <!-- chuyen page trong du an-->
+    <a href="lesson2.html"target="blank">Facebook cá nhân </a> <br>
+    <!-- chuyen page-->
+    <p> an vao <a href="#text-info"> day </a> de chuyen lan thong tin can chuyen</p>
+    <body>
+        <h1>login form</h1>
+        <!-- the form-->
+        <!--action : để server xử lý chuyển sang login-->
+        <!-- method : get và post : get lấy đi,post truyền dữ liệu - http-->
+        <form action="/.login"method="post">
+            <!-- label tác dụng hiển thị thông tin-->
+            <!-- name : server hiểu tag sử dụng đc tài nguyên của tag -->
+            <label for="txt-username">username  </label>
+            <input type="text" name="username"
+            id="txt-username "placeholder="tên đăng nhập"> <br>
+            <label for="txt-password">password  </label>
+            <input type="password" name="password"
+            id="txt-password"placeholder="mật khẩu">
+            <hr>
+            <input type="button" value="login">
+            <input type="submit" value="login">
+            <input type="submit" value=" logout">
+            <a href="">forgot password</a>
+        </form>
+    </body>
+
+
+</body>
+</html>

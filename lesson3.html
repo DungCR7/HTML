@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login form</h1>
+    <!-- thẻ form-->
+    <form action="./login"method="post">
+        <!--thẻ label tác dụng hiển thị thông tin -->
+        <!-- name : server hiểu thẻ tag sử dụng đc tài nguyên của tag-->
+        <!-- action để cho server xử lý trang login
+            method(2): get lấy dữ liệu ,post truyền dữ liệu -->
+        <label for="">username</label>
+        <input type="text"name="username"id="txt-username" placeholder="Tên đăng nhập"> <br>
+        <label for="">password </label>
+        <input type="password" name="password" id="txt-password" placeholder="Mật khẩu">
+        <hr>
+        <input type="button" value="login" id="login">
+        <input type="submit" value="logout" id="logout">
+        <a href="">forgot password</a>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Độ ưu tiên</title>
+    <!--3. triển khai thông qua 1 file css bên ngoài
+    để nhúng file css cần nhúng link -->
+   
+    <!-- external : triển khai bên ngoài thẻ-->
+    <!-- 2.triển khai trong header-->
+      <style>
+        /*loại 1(min) tag name p
+        khi dùng thẻ p thì tất cả các chỗ sử dụng thẻ p đều nhận được style p(2,3,4)  */
+        p{
+            color: blueviolet;
+            font-size: 25px;
+        }
+        /* id 
+        #p2 = key(dấu thăng) + tên id 
+        loại 3 : id(100) */
+        #heading-id{
+            color: black;
+            font-size: 40px;
+        }
+        /*class triển khai trong html 3
+        loại 2 -class(10) */
+        .heading-class{
+            color: cadetblue;
+            font-size: 50px;
+        }
+    </style>  
+    <!-- file css-->
+     <link rel="stylesheet" href="./CSS1/custom.css">
+
+</head> <!-- internal có độ ưu tiên cao nhất
+            với style và file thì dựa trên thứ tự 
+            trong thẻ head để quyết định style nào ddc sử dụng
+        nếu style dưới link thì nhận style
+        nếu style trên link thì nhận link
+        =>cái nào nằm dưới nhận cái đó -->
+<body>
+        <!-- triển khai internal css trong html ,bản thân thẻ p
+        loại 4 internal(1000)-->
+     <p style="color: brown;font-size: 20px;"> Triển khai css trong html 1</p>  
+        <!-- các loại viết css:tagname ,id , class 
+        -viết thẻ id -->
+    <p id="heading-id" style="color:blue;font-size: 20px;"class="heading-class">
+        Triển khai css trong html 2</p>
+    <p class="heading-class">Triển khai css trong html 3</p>
+    <p>Triển khai css trong html 4</p>
+    Triển khai css trong html 5
+    <!-- độ ưu tiên
+    top 1: internal : 1000 (max)
+    top 2:dấu thăng:(#)id:100 - triển khai cho duy nhất 1 thẻ
+    top 3:class:10 -triển khai cho nhiều tag
+    top 4:style và file:1 - ít khi sd(toàn bộ tag cùng tên)
+    top 5:normal : 0 -->
+</body>
+</html>

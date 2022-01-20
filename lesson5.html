@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- danh sách k thứ tự-->
+    <ul>
+        <!-- kiểu mặc định chấm đặc-->
+        <li>cà phê</li>
+        <li>chanh leo</li>
+        <li>nước cam</li>
+    </ul>
+    <!-- kiểu vuông -->
+    <ul style="list-style-type: square ;"> 
+        <li>cà phê</li>
+        <li>chanh leo</li>
+        <li>nước cam</li>
+    </ul>
+    <!-- kiểu chấm tròn -->
+    <ul style="list-style-type: circle;"> 
+        <li>cà phê</li>
+        <li>chanh leo</li>
+        <li>nước cam</li>
+    </ul>
+    <!-- kiểu không có gì -->
+    <ul style="list-style-type: none ; "> 
+        <li>cà phê</li>
+        <li>chanh leo</li>
+        <li>nước cam</li>
+    </ul>
+    <!-- mục nhỏ vuông -->
+    <ul style="list-style-type: square ;"> 
+        <li>
+            cà phê  
+            <ul>
+                <li>nâu </li>
+                <li>đen</li>
+                <li>sài gòn</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- mục mặc định-->
+    <ul style="list-style-type: ;"> 
+        <li>
+            cà phê  
+            <ul>
+                <li>nâu </li>
+                <li>đen</li>
+                <li>sài gòn</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- order list : ds có thứ tự-->
+    <ol>
+        <!-- đi từ 1-->
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- đi từ 4-->
+    <ol start="4">
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- loại a đi từ 5-->
+    <ol type="A " start="5">
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- đi từ 7-->
+    <ol type="I " start=" 7">
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- loại a đi bcd-->
+    <ol type="A"start="2"  >
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- số la mã đi từ 4-->
+    <ol type="i" start="4">
+        <li>nâu </li>
+        <li>đen</li>
+        <li>sài gòn</li>
+    </ol>
+    <!-- table cơ bản ->  -->
+    <table>
+        <thead>
+            <!-- tiêu đề -->
+            <tr>#</tr>
+            <tr>First Name</tr>
+            <tr>Last Name</tr>
+            <tr>User Name</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otoo</td>
+                <td>@mark</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Merry</td>
+                <td>Spider</td>
+                <td>@Spider</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tony</td>
+                <td>Otoo</td>
+                <td>@stark</td>
+            </tr>
+            <!-- nội dung-->
+        </tbody>
+        <tfoot>
+            <tr>#</tr>
+            <tr>First Name</tr>
+            <tr>Last Name</tr>
+            <tr>User Name</tr>
+            <!-- chân trang-->
+        </tfoot>
+    </table>
+    <!-- image: attribute liên quan và link image-->
+    <!-- lấy ảnh từ pc,src : nguồn ảnh , alt : thông báo khi không load được ảnh-->
+    <image src="./image/a8ea51143c5c6f90fa98cc1b973fdda6.jpg" alt="ảnh siêu nhân" >
+    <!-- lấy ảnh từ project-->
+    <img src="https://th.bing.com/th/id/OIP.7wguENQUh7g9PbV2mAsLCwHaHa?pid=ImgDet&rs=1" alt="ảnh siêu nhân" style="width: auto;height: 300;" >
+    <!-- width : chiều rộng , height : chiều cao 
+    lấy ảnh từ website-->
+    <img src="https://th.bing.com/th/id/R.c5a4c366daf895a59b577a5e4df1fccb?rik=6Rm8J%2fFHARaUfA&pid=ImgRaw&r=0 " alt="ảnh siêu nhân" style="width: 500px;height: 500px;">
+    <!-- link ảnh-->
+    <a href="https://th.bing.com/th/id/OIP.QGrln5AgXFn_BS2YJwSoHgHaHa?pid=ImgDet&w=480&h=480&rs=1" target="_blank">Click vào đây </a> <br> 
+    <!-- dùng ảnh thay cho text
+    click vào ảnh nhảy qua page khác-->
+    <a href="https://th.bing.com/th/id/OIP.QGrln5AgXFn_BS2YJwSoHgHaHa?pid=ImgDet&w=480&h=480&rs=1" target="_blank">
+    <image src="./image/a8ea51143c5c6f90fa98cc1b973fdda6.jpg" alt="ảnh siêu nhân" ></a>
+    <!-- xây dựng layout - sử dụng dev tool để xác định layout từ 1 giao diện có sẵn--> 
+    <!-- menu và logo website - triển khai trong thẻ nav -->
+    <nav>
+        <!-- nav xây dựng menu-->
+    </nav>
+    <!-- xây dựng khối trong giao diện-->
+    <section>
+        <!-- khối lớn đc sử dụng bằng section-->
+        <!-- slide-->
+        <div>
+            <!--triển khai class,id,thành phần -->
+        </div>
+    </section>
+    <section>
+        <!-- nghiệp vụ-->
+    </section>
+    <section>
+        <!-- danh mục sp-->
+    </section>
+    <section>
+        <!-- sp tiêu biểu-->
+    </section>
+    <footer>
+        <!-- chân trang web-->
+    </footer>
+</body>
+</html>

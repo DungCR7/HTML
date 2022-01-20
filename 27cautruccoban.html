@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="default input">default input</label>
+    <input type="text"name="default" placeholder="default input" id="default input"> <br>
+    <label for="disable input">disable input</label>
+    <input type="text"name="disable" placeholder="disable input" id="disable input"> <br>
+    <label for="read only input">read only input</label>
+    <input type="text"name="readonly" placeholder="read only input" id="readonly input"> <br>
+    <label for="date of birth">date of birth</label>
+    <input type="text"name="date of birth" placeholder="date of birth" id=" date of birht"> <br>
+    <label for="password">password</label>
+    <input type="password" name="txt-password1"placeholder="password" id="txt-passwordpassword1" > <br>
+    <label for="auto complete">auto complete</label>
+    <input type="text"name="auto complete " placeholder="auto complete " id="auto complete" > <br>
+    <label for="">select</label> 
+    <select name="lụa chọn" id="txt-select"> <br>
+        <option value="chọn 1">chọn 1</option>
+        <option value="chọn 2">chọn 2</option>
+        <option value="chọn 3">chọn 3</option>
+        <option value="chọn 4">chọn 4</option>
+        <option value="chọn 4">chọn 4</option>
+        <option value="chọn 4">chọn 4</option>
+
+    </select> <br>
+    <label for="">select custom</label>
+    <select name="chọn tiếp" id="txt-select">
+        <option value="chọn 3">chọn 3</option>
+        <option value="chọn 4">chọn 4</option>
+    </select> <br>
+    <label for="">select group</label>
+    <select name="group" id="txt-select">
+        <option value="chọn 4">chọn 4</option>
+        <option value="chọn 5">chọn 5</option>
+    </select> <br>
+    <!-- select : lựa chọn giá trị-->
+    <p> Select Multiple</p>
+    <form action="action_page" method="post">
+        <label for="">lựa chọn hãng xe</label>
+           <!-- the select lựa chọn-->
+        <select name="hang-xe" id="txt-select">
+            <option value="toyta">hãng toyta</option>
+            <option value="vinfast">hãng vinfast</option>
+            <option value="mazada">hãng mazada</option>
+            <option value="huyndai">hãng huyndai</option>
+            <option value="vios">hãng vios</option>
+        </select>
+        <button type="submit">Gửi</button>
+    </form>
+    <p>date </p>
+    <form action="action_page" method="post">
+        <label for="text-content">nhập thông tinn</label>
+        <input type="date" id="txt-ngaySinh" min="2001-01-01" max="2005-01-01" >
+        <button type="submit" >Gửi</button>
+    </form>
+    <p>time </p>
+    <form action="action_page" method="post">
+        <label for="text-time">nhập thông tinn</label>
+        <input type="time" id="txt-time"  >
+        <button type="submit" >Gửi</button>
+    </form>
+    <p>week </p>
+    <form action="action_page" method="post">
+        <label for="text-week">nhập thông tinn</label>
+        <input type="week" id="txt-week"  >
+        <button type="submit" >Gửi</button>
+    </form>
+    <p> file</p>
+    <form action="action_page" method="post">
+        <label for="text-file">nhập thông tin</label>
+        <input type="file" id="txt-file"Multiple >
+        <button type="submit" >Gửi</button>
+    </form>
+    <p> Point </p>
+        </p><form action="action_page" method="post">
+        Points:
+        <input type="range" name="points" min="0" max="10">
+        <button type="Gửi"></button>
+        </form>
+    
+    <p>google search</p>
+    <form action="action_page" method="post">
+        <label for="text-content">Google Search</label>
+        <input type="google" id="txt-google"  >
+        <button type="submit" >Gửi</button>
+    </form>
+    <p>sss</p>
+    <form action="action_page.php">
+        Telephone:
+        <input type="tel" name="usrtel">
+        <input type="submit">
+        </form>
+    <p> giới tính</p>
+        <form action="action_page.php">
+            <input type="radio" name="gender" value="male" > Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"checked> Other
+            <input type="submit">
+        </form>
+</body>
+</html>
